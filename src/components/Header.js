@@ -5,7 +5,7 @@ import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { logout } from '../actions/userAction'
 const Header = () => {
   const dispatch = useDispatch()
-  const { loading, error, userInfo } = useSelector((state) => state.user)
+  const { userInfo } = useSelector((state) => state.user)
   const logoutHandler = () => {
     dispatch(logout())
   }

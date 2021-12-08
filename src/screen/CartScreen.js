@@ -3,9 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
 import Message from '../components/Message'
-import Loader from '../components/Loader'
 import { addTocart, removeFromCart } from '../actions/cartAction'
-import { remove } from 'dom-helpers'
 const CartScreen = () => {
   const cart = useSelector((state) => state.cart)
   const { cartItems } = cart

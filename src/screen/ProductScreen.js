@@ -16,7 +16,7 @@ const ProductScreen = () => {
   const { loading, error, product } = productDetails
   useEffect(() => {
     dispatch(listProductDetails(id))
-  }, [dispatch, useParams])
+  }, [dispatch, id])
 
   const addToCartHandler = () => {
     navigate(`/cart/${id}/${qty}`)
