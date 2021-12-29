@@ -20,7 +20,7 @@ const CartScreen = () => {
     dispatch(removeFromCart(id))
   }
   const checkoutHandler=()=>{
-      navigate('/login/:shipping')
+      navigate('/shipping')
   }
   return (
     <Row>
